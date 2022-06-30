@@ -1,0 +1,8 @@
+.vscode/
+*.pyc
+.pytest*/
+*.egg-info/
+.ipynb_checkpoints/
+.terraform/
+*.tfvars
+*.tfstate

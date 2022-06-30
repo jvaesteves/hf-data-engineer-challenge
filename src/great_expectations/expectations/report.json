@@ -1,0 +1,90 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "report",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "avg_total_cooking_time",
+        "type_list": [
+          "DoubleType",
+          "FloatTye"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "difficulty",
+        "type_": "StringType"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "avg_total_cooking_time"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "difficulty"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "avg_total_cooking_time"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "difficulty"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "avg_total_cooking_time"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "difficulty"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "avg_total_cooking_time"
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "report.snappy",
+          "datasource": "sample_data",
+          "path": "/home/jvaesteves/Workspace/others/jvaesteves-data-engineering-test/sample/report.snappy.parquet"
+        },
+        "batch_markers": null,
+        "batch_parameters": null,
+        "citation_date": "20200901T191430.867458Z",
+        "comment": "New suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.12.0"
+  }
+}
